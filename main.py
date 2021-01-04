@@ -1,4 +1,7 @@
 import urllib.request
+from datetime import datetime
+
+current_time = datetime.now()
 
 def dl_img_to_jpg(url, file_path, file_name):
     full_path = file_path + file_name + '.jpg'
@@ -10,4 +13,5 @@ file_name = input('Enter file name to save as:')
 
 dl_img_to_jpg(url,'images/', file_name)
 
-print(f"Thank you {name} for using our services")
+print(f"Thank you {name} for using our services. LOG DATE = {current_time}") 
+
